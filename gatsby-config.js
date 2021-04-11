@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "microsite",
+    siteUrl: "https://timuism.net",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
