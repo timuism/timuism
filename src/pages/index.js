@@ -1,148 +1,55 @@
-import * as React from "react"
+import * as React from "react";
+import "../styles/global.css";
+import Card from '../components/card';
+import Link from '../components/link';
+// import "@fontsource/vampiro-one";
+import TimLongSquareSmall from "../images/TimLongSquareSmall.jpg";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: "300",
-  fontSize: "24px",
-  maxWidth: "560px",
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: "16px",
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: "14px",
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-// data
+const navLinkClassList = "text-primary-1 text-xl font-semibold no-underline hover:text-primary-2 hover:underline";
 const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#000000",
-  },
+  {href: 'https://github.com/timuism', text: 'GitHub'},
+  {href: 'https://twitter.com/timuism', text: 'Twitter'},
+  {href: 'https://www.linkedin.com/in/timuism/', text: 'LinkedIn'},
+  {href: 'mailto:tim@timuism.net', text: 'Email Me'},
 ]
 
-// markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+    <main className="flex flex-col items-center justify-center text-gray-1 font-display">
+      <header className={"flex flex-start items-center w-full bg-primary-1 px-12 py-5 border-b-4 border-primary-2"}>
+        <div className="flex items-center flex-start" style={{maxWidth: "1440px"}}>
+          <img src={TimLongSquareSmall} className={"border-primary-2 rounded-full bg-green-100 border-2 mx-5"} alt="tim long" />
+          <h1 className={"hidden"}>Tim Long (timuism)'s Virtual Home</h1>
+          <h2 className="text-5xl text-secondary-1 font-logo" style={{textShadow: "2px 2px 0px rgba(0, 0, 0, 0.25)"}}>timuism</h2>
+        </div>
+      </header>
+
+      <div className="flex flex-col items-center justify-center max-w-3xl p-12">
+
+        <Card>
+          <div className="space-y-5">
+            <p className={"text-2xl"}>
+                I'm Tim Long. A Web Developer in Baltimore, Maryland.
+            </p>
+            <p className={"text-2xl"}>
+              While my role at <Link href="https://blueoceanideas.com" text="Blue Ocean Ideas" /> keeps me busy enough, I am also looking to take on small freelance projects. If you are looking for logo design, UI design, front-end development or consulting, I'd love to hear from you!
+            </p>
+            <p className={"text-2xl"}> 
+              I also play bass & make <Link href="https://soundcloud.com/timuism" text="music" />.
+            </p>
+          </div>
+
+          <nav className="flex flex-col justify-start w-full pt-8 space-y-2 md:space-y-0 md:space-x-8 md:flex-row">
+            {links.map(link => <Link href={link.href} text={link.text} classList={navLinkClassList} />)}
+          </nav>
+        </Card>
+
+        <section className="flex flex-col items-center justify-center w-full p-12 m-5">
+          <h5 className="pb-1 mb-5 uppercase border-b border-dotted opacity-75 border-gray-1">What's New</h5>
+          <p class="text-xl opacity-50">No Projects, Articles, or Links at this time 😭</p>
+        </section>
+
+      </div>
     </main>
   )
 }

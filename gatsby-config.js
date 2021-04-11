@@ -5,12 +5,6 @@ module.exports = {
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
