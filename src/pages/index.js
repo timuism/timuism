@@ -24,7 +24,7 @@ const IndexPage = () => {
         </div>
       </header>
 
-      <div className="flex flex-col items-center justify-center max-w-3xl">
+      <div className="flex flex-col items-center justify-center max-w-3xl md:p-12">
 
         <Card>
           <div className="space-y-5">
