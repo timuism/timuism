@@ -2,8 +2,8 @@ import * as React from "react";
 import "../styles/global.css";
 import Card from '../components/card';
 import Link from '../components/link';
-// import "@fontsource/vampiro-one";
 import TimLongSquareSmall from "../images/TimLongSquareSmall.jpg";
+import TimLongWebDeveloperResume from "../files/TimLongWebDeveloperResume.pdf";
 
 const navLinkClassList = "text-primary-1 text-xl font-semibold no-underline hover:text-primary-2 hover:underline";
 const links = [
@@ -18,7 +18,7 @@ const IndexPage = () => {
     <main className="flex flex-col items-center justify-center text-gray-1 font-display">
       
       <div id="banner" class="bg-green-500 text-white p-3 w-full text-center">
-        <p>Looking for my <strong>resume</strong>? <a href="/files/TimLongWebDeveloperResume.pdf" class="underline hover:opacity-80 transition duration-300">You can download it here!</a></p>
+        <p>Looking for my <strong>resume</strong>? <a href={TimLongWebDeveloperResume} class="underline hover:opacity-80 transition duration-300">You can download it here!</a></p>
       </div>
 
       <header className={"flex justify-center md:justify-start items-center w-full bg-primary-1 px-12 py-5 border-b-4 border-primary-2"}>
