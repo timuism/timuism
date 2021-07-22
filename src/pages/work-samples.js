@@ -22,7 +22,7 @@ const WorkSamplesPage = () => {
                     <div className="py-2 space-y-2">
                         <p>Laruta is a web application that I have been a part of developing during my time with Blue Ocean Ideas. While, there have been a handful of developers that have touched the application (including the front-end), a good amount of the front end development work on the below sites has been implemented or updated by me.</p>
                         <p>
-                            A lot of the features are behing a member subscription and difficult to showcase, but I have below a few snippets of code from some features:
+                            A lot of the features are behind a member subscription and difficult to showcase, but the code within the <em>Laruta</em> directory (in the code samples <Link href="https://github.com/timuism/code-samples" text="repo" />/directory provided) comes from Laruta.
                         </p>
                         <p><strong>Technologies used:</strong> HTML, CSS, LESS, SCSS, Semantic UI, Bootstrap, Javascript, jQuery, SelectJs, Algolia + React Instant Search, Vanilla JS, Wordpress, Laravel, Woocommerce, Gravity Forms, Advanced Custom Fields </p>
                     </div>
@@ -36,13 +36,6 @@ const WorkSamplesPage = () => {
                         }
                     </ul>
                 
-                </Card>
-
-                <Card>
-                    <h1>Laruta Sites</h1>
-                    <ul>
-                    
-                    </ul>
                 </Card>
             </div>
         </PageTemplate>
