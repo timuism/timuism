@@ -1,4 +1,5 @@
-@import url('sen.css');
+@import url('./sen.css');
+@import url('./prism/dracula.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
