@@ -9,5 +9,14 @@
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Enable the Preact renderer to support Preact JSX components.
+	buildOptions: {
+		site: 'https://timuism.net',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+		sitemap: true,         // Generate sitemap (set to "false" to disable)
+	  },
+	  devOptions: {
+		// hostname: 'localhost',  // The hostname to run the dev server on.
+		// port: 3000,             // The port to run the dev server on.
+		tailwindConfig: './tailwind.config.js',     // Path to tailwind.config.js if used, e.g. './tailwind.config.js'
+	  },
 	renderers: ['@astrojs/renderer-vue'],
 });
