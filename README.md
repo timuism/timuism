@@ -1,48 +1,54 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Astro Starter Kit: Blog
 
-## 🚀 Quick start
+```
+npm init astro -- --template blog
+```
 
-1.  **Create a Gatsby site.**
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+Features:
 
-2.  **Start developing.**
+- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
+- ✅ Full Markdown support
+- ✅ RSS 2.0 generation
+- ✅ Sitemap.xml generation
 
-    Navigate into your new site’s directory and start it up.
+## 🚀 Project Structure
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+Inside of your Astro project, you'll see the following folders and files:
 
-3.  **Open the code and start customizing!**
+```
+/
+├── public/
+│   ├── robots.txt
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   └── Tour.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-    Your site is now running at http://localhost:8000!
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-4.  **Learn more**
+Any static assets, like images, can be placed in the `public/` directory.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🧞 Commands
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+All commands are run from the root of the project, from a terminal:
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+| Command           | Action                                       |
+|:----------------  |:-------------------------------------------- |
+| `npm install`     | Installs dependencies                        |
+| `npm run dev`     | Starts local dev server at `localhost:3000`  |
+| `npm run build`   | Build your production site to `./dist/`      |
+| `npm run preview` | Preview your build locally, before deploying |
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 👀 Want to learn more?
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).

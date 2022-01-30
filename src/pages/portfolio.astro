@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PortfolioItem from '../components/PortfolioItem.astro';
+---
+
+<BaseLayout>
+	<section class="min-w-[320px] w-full md:w-2/3 lg:w-1/2 px-6 md:px-12">
+        <div class="flex flex-col space-y-4">
+            <PortfolioItem 
+                title="Purpose Ova Everything"
+                url="https://www.purposeovaeverything.com"
+                image="PurposeOvaEverything.png"
+                alt=""
+            >
+                I designed and developed a custom shopify theme for this baltimore-based clothing and apparel brand.
+            </PortfolioItem>
+
+            <PortfolioItem 
+                title="April Cook Salon"
+                url="https://www.aprilcooksalon.com"
+                image="AprilCookSalon.png"
+                alt=""
+            >
+                I was the web consultant and developer for this local salon. The goal was to build something that could be easily managed by the Client. Site was developed using the WiX platform.
+            </PortfolioItem>
+        </div>
+	</section>
+</BaseLayout>

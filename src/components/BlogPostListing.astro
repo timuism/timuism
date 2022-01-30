@@ -1,0 +1,16 @@
+---
+import PublishDate from './PublishDate.astro';
+export interface Props {
+	post: any;
+}
+
+const { post } = Astro.props;
+console.log(post.publishDate);
+---
+
+<article class="group border-gray hover:border-primary border-2 rounded px-6 py-4">
+	<a href={post.url} class="group-hover:text-primary">
+		<h3 class="text-xl pb-6 group-hover:text-primary group-hover:underline">{post.title}</h3>
+		<PublishDate date={post.publishDate} addClasses="group-hover:text-primary" />
+	</a>
+</article>
