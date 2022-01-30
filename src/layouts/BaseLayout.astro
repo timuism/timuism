@@ -1,0 +1,46 @@
+---
+// Component Imports
+import BaseHead from '../components/BaseHead.astro';
+
+interface MarkdownFrontmatter {
+	publishDate: number;
+}
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'timuism | tim long | ui/ux design + front-end development';
+let description = 'digital home for tim long';
+let permalink = 'https://timuism.net/';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<BaseHead {title} {description} {permalink} />
+	</head>
+
+	<body class="font-sen bg-gray-extra-dark text-gray-extra-light antialiased subpixel-antialiased">
+		<main>
+			<nav class="w-full flex justify-between items-center py-4 md:py-4 px-6 md:px-12 border-b-4 border-primary mb-8">
+				<a href="/" class="rounded-full overflow-hidden">
+					<img src="/public/assets/images/NavTimPortrait.jpg" alt="Small portrait of Tim Long" class="scale-75 md:scale-100 border-4 border-transparent hover:border-primary duration-300 rounded-full w-full h-full object-cover" />
+				</a>
+				
+				<div class="flex ml-4 md:ml-0 flex-wrap md:flex-no-wrap md:space-x-6 text-xl md:text-2xl">
+					<a href="/portfolio" class="w-1/2 md:w-auto text-primary-dark hover:underline hover:text-primary">Portfolio</a>
+					<a href="/posts" class="w-1/2 md:w-auto text-primary-dark hover:underline hover:text-primary opacity-25 pointer-events-none" disabled>Blog</a>
+					<a href="https://github.com/timuism" class="w-1/2 md:w-auto text-primary-dark hover:underline hover:text-primary" target="_new">Github</a>
+					<a href="https://twitter.com/timuism" class="w-1/2 md:w-auto text-primary-dark hover:underline hover:text-primary" target="_new">Twitter</a>
+				</div>
+			</nav>
+
+			<div class="max-w-screen-xl mx-auto mb-12">
+				<slot />
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+@import url('sen.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markup-p {
+    @apply text-lg;
+}
+
+.post-content > * + *, 
+.markup-p + .markup-p {
+    @apply pt-6;
+}
+
+.post-content p {
+    @apply leading-relaxed;
+}
