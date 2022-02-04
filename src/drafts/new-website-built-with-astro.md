@@ -8,7 +8,7 @@ description: Just a Hello World Post!
 heroImage: /public/assets/blog/WebsiteScreenShot.png
 ---
 
-Happy new year! I know it is the end of January, and therefore I'm saying this about a month too late, but it is never too late to start a blog and redesign your site. 
+Happy new year! **I know it is the end of January**, *and therefore I'm saying this about a month too late, but it is never too* late to start a blog and redesign your site. 
 
 I set this site up last summer as a quick portfolio for a job that I was applying for (and that I now have 😃). And I'm happy to say that I really love this new position and it has brought a new level of excitement to me with web development. So here I am, going into February with the intention of developing my web development career.
 

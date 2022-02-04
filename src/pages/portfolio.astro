@@ -4,8 +4,17 @@ import PortfolioItem from '../components/PortfolioItem.astro';
 ---
 
 <BaseLayout>
-	<section class="min-w-[320px] w-full md:w-2/3 lg:w-1/2 px-6 md:px-12">
-        <div class="flex flex-col space-y-4">
+	<section class="min-w-[320px] w-full px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <PortfolioItem 
+                title="Dagger App Website"
+                url="https://www.jhuapl.edu/dagger"
+                image="AplDagger.png"
+                alt=""
+            />
+           
+
             <PortfolioItem 
                 title="Purpose Ova Everything"
                 url="https://www.purposeovaeverything.com"
