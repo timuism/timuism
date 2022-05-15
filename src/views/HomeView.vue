@@ -1,7 +1,7 @@
 <template>
-    <main class="w-screen h-screen pt-24 pl-40 text-white border-t-8 bg-sand border-sand-dark font-dmsans">
-        <div class="flex flex-col max-w-screen-xl mx-auto my-12 space-x-56 md:flex-row item-center">
-            <header class="font-dmserif border-l-4 border-white/50 space-y-24 pl-12 py-12 lowercase min-w-[360px]">
+    <main class="text-white border-t-8 md:pt-24 md:pl-40 md:w-screen md:h-screen bg-sand border-sand-dark font-dmsans">
+        <div class="flex flex-col max-w-screen-xl mx-auto my-12 md:space-x-56 md:flex-row item-center">
+            <header class="font-dmserif md:border-l-4 border-white/50 space-y-6 md:space-y-24 md:pl-12 py-12 lowercase min-w-[360px] mx-auto md:mx-0">
                 <h1 class="text-6xl">tim _u _ism</h1>
                 <h2 class="flex flex-col space-y-4 text-4xl">
                     <span>Web Developer</span>
@@ -9,10 +9,10 @@
                 </h2>
             </header>
 
-            <section class="md:relative space-y-16 text-2xl min-w-[300px] pr-12">
-                <img src="@/assets/JoinedCircles.svg" alt="Two Overlapping Circles" class="md:absolute min-w-[250px] min-h-[190px]" />
+            <section class="relative md:space-y-16 text-2xl md:pr-12 min-w-[250px] mx-auto md:mx-0">
+                <img src="@/assets/JoinedCircles.svg" alt="Two Overlapping Circles" class="md:absolute mx-auto min-h-[190px]" />
 
-                <article class="-mt-16 space-y-8 md:absolute">
+                <article class="px-4 -mt-40 space-y-8 md:px-0 md:-mt-16 md:absolute w-[250px] mx-auto md:mx-0">
                     <p>
                         <span class="font-dmserif">You</span>
                         are somebody different to everyone you meet
@@ -26,7 +26,7 @@
             </section>
         </div>
         
-        <section class="flex items-center max-w-screen-xl pt-12 mx-auto space-x-12 lowercase">
+        <section class="flex flex-col items-center max-w-screen-xl pt-12 pb-24 mx-16 space-y-8 lowercase border-t-4 md:pb-0 md:mx-auto md:flex-row md:space-y-0 md:space-x-12 border-white/10 md:border-0">
             <a href="https://detached.dev" target="_new" class="px-8 py-6 space-y-4 duration-200 hover:bg-dt-gray hover:text-dt-yellow rounded-xl">
                 <div class="text-5xl">Detached</div>
                 <div class="text-xs">(A Web Development Blog)</div>
