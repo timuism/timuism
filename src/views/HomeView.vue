@@ -32,7 +32,7 @@
                 <div class="text-xs">(A Web Development Blog)</div>
             </a>
 
-            <a href="https://subatmc.co" target="_new" class="px-8 py-6 space-y-4 duration-200 hover:bg-black hover:text-sb-gold rounded-xl">
+            <a href="https://subatmc.com" target="_new" class="px-8 py-6 space-y-4 duration-200 hover:bg-black hover:text-sb-gold rounded-xl">
                 <div class="text-5xl">Subatmc</div>
                 <div class="text-xs">(original music)</div>
             </a>
