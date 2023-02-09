@@ -17,6 +17,11 @@ module.exports = {
             },
             'sb': {
                 gold: 'hsl(47, 40%, 48%)',
+            },
+            'stats': {
+              'lightBrown': '#F5DCB5',
+              'brown': '#AD974A',
+              'darkBrown': '#7D6409'
             }
         },
         fontFamily: {
