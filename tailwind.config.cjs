@@ -12,7 +12,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Barlow', 'Helvetica', 'Arial', 'sans-serif'],
-      'display': ["'Barlow Condensed", 'Helvetica', 'Arial', 'sans-serif']
+      'display': ["'Barlow Condensed'", 'Helvetica', 'Arial', 'sans-serif']
     },
 		extend: {},
 	},
