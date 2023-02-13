@@ -1,0 +1,29 @@
+---
+layout: ../../layouts/PostLayout.astro
+title: Easy startup scripts with pm2
+publishDate: Sep 15 2022
+author: Tim Long
+description: Use pm2 to automate the startup of scripts on a server
+---
+
+Not too long ago, I had to setup a virtual machine to be used as a simple server at work. The VMs go on and off on a schedule and I needed to figure out a way to start a strapi server automatically. pm2 made it super easy.
+
+```bash
+npm install pm2@latest -g
+```
+
+Create a script and upload it to you server. Then start it with pm2 with the following command:
+
+```bash
+# your script can be a javascript or shell file
+pm2 start [script]
+```
+
+After you start your script, to make it run on startup, do:
+
+```bash
+pm2 startup
+pm2 save
+```
+
+That's all! Check out pm2’s quick start guide and their docs for more details of course.

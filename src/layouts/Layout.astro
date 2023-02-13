@@ -1,0 +1,68 @@
+---
+import Link from '../components/Link.astro';
+import '../../assets/app.css'
+import '../../assets/fonts/barlow-v12-latin/barlow.css'
+import MeHeader from '../../assets/images/me-header.jpg'
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+
+	<body class="font-sans bg-chineseviolet bg-black max-w-screen-lg mx-auto text-white">
+    <main class="md:pt-12 md:min-h-screen flex flex-col md:flex-row items-start justify-center md:space-x-24">
+      <div class="w-full md:w-[200px] p-4 md:py-0 md:pl-0 md:pr-6">
+        <header class="px-4 md:text-right">
+          <h1 class="text-2xl font-display font-bold italic tracking-wider text-secondary">
+            <a href="/" class="w-[50px] h-[50px] mb-4 md:mb-0 md:w-[100px] md:h-[100px] inline-block rounded-full overflow-hidden border-2 border-transparent hover:animate-pulse hover:border-secondary hover:rotate-12 duration-200">
+              <img src={MeHeader} alt="Photo of Tim Long" class="object-cover" />
+            </a>
+          </h1>
+        </header>
+
+        <aside class="md:ml-6">
+          <nav class="flex justify-between items-baseline md:flex-col px-4 my-2 md:mt-6 md:divide-y-4 divide-primary/10 md:text-right font-light">
+            <div class="md:w-full md:py-6 flex flex-col space-y-3">
+              <Link href="/blog">Blog</Link>
+              <Link href="/recent-work">Recent Work</Link>
+              <Link href="/projects">Projects</Link>
+            </div>
+
+            <div class="md:w-full md:py-6 flex flex-col space-y-3">
+              <Link href="/about">About</Link>
+              
+              <!-- <Link href="/newsletter">Newsletter</Link> -->
+              <Link href="https://twitter.com/timuism">Twitter</Link>
+            </div>
+
+            <div class="md:w-full md:py-6">
+              <Link href="https://subatmc.com">Music</Link>
+            </div>
+          </nav>
+        </aside>
+      </div>
+
+      <section class="shrink w-full md:max-w-[720px] md:w-4/5 p-12 md:pb-0 md:px-0 md:mt-6 md:pt-6 border-t-2 border-secondary">
+        <slot />
+      </section>
+    </main>
+
+	</body>
+</html>
+
+<style is:global>
+  .longform-p {
+    max-width: 480px;
+  }
+</style>

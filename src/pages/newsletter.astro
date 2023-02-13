@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="subscribe to my newsletter | timuism | the online home of timothy long">
+	<article>
+		<h2 class="text-2xl">Subscribe to my newsletter</h2>
+
+    <p class="longform-p mt-12">
+      I promise not to spam you! If you've enjoyed my posts or want to follow along with what is going on in my life, feel free to subscribe.
+    </p>
+
+    <form name="subscribe-to-newsletter" class="mt-12 flex flex-col space-y-8 border-2 border-primary rounded p-12" netlify>
+      <label>
+        <p class="text-primary">Your Name</p>
+        <input 
+          type="text" 
+          placeholder="First name, nick name or your entire name" 
+          class="bg-black border-2 font-semibold text-primary border-primary px-2 py-2 mt-2 text-lg rounded font-sans outline-none focus:outline-white/25 placeholder:text-white/25 placeholder:font-normal" 
+          size="40"
+          required
+          />
+      </label>
+      
+      <label>
+        <p class="text-primary">Email Address</p>
+        <input 
+          type="text" 
+          placeholder="name@example.com" 
+          class="bg-black border-2 font-semibold text-primary border-primary px-2 py-2 mt-2 text-lg rounded font-sans outline-none focus:outline-white/25 placeholder:text-white/25 placeholder:font-normal" 
+          size="40"
+          required
+        />
+      </label>
+
+      <div class="pt-8">
+        <button type="submit" class="bg-primary text-xl inline-flex px-8 py-4 rounded font-display hover:bg-secondary duration-200">
+          Subscribe Now
+        </button>
+      </div>
+    </form>
+  </article>
+</Layout>
+

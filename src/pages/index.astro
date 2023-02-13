@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InlinePost from '../components/InlinePost.astro';
+
+let allPosts = await Astro.glob('./posts/*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+---
+
+<Layout title="timuism | the online home of timothy long">
+	<article class="">
+		<h1 class="text-4xl md:text-5xl leading-snug">
+      Hey, I'm Timothy! 
+    </h1>
+
+    <p class="text-xl md:text-2xl leading-snug mt-12">
+      I'm a user interface developer that loves building web apps. I'm always striving to create innovative and creative designs that will bring user experience to the next level. I'm passionate about creating unique applications that are both visually stimulating and functional.
+    </p>
+
+
+    <section>
+      <h2 class="text-xl font-display font-bold mt-16">
+        Latest Posts
+      </h2>
+
+      <section aria-label="Blog post list" class="mt-6 space-y-12">
+        {allPosts.map((p) => <InlinePost post={p} />)}
+      </section>
+
+      <a href="/blog" class="inline-block text-xl font-display border-2 border-primary text-primary rounded px-8 py-2 mt-8 hover:bg-secondary hover:border-secondary hover:text-black duration-200">View all</a>
+    </section>
+
+    <section>
+      <p>
+      </p>
+    </section>
+  </article>
+</Layout>
+
