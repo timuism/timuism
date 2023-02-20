@@ -1,0 +1,57 @@
+---
+import LinkLayout from '../layouts/LinkLayout.astro';
+
+interface LinkInterface {
+  url: string
+  text: string
+  isInternalLink?: boolean
+}
+
+// @todo: add order prop for manual sorting
+const links: LinkInterface[] = [
+  {
+    url: 'https://instagram.com/timuism',
+    text: 'Instagram',
+  },
+  {
+    url: 'https://twitter.com/timuism',
+    text: 'Twitter'
+  },
+  {
+    url: 'https://twitch.tv/timuism',
+    text: 'Twitch'
+  },
+  {
+    url: 'https://www.youtube.com/channel/UCVCY5V1UVF8NtaIOV0ye3vQ',
+    text: 'YouTube'
+  },
+  {
+    url: '/',
+    text: 'My Website',
+    isInternalLink: true
+  }
+]
+---
+
+<LinkLayout title="about | timuism | the online home of timothy long">
+	<article class="font-medium">
+		<h2 class="hidden text-2xl">Links</h2>
+    <section class="flex flex-col items-start space-y-6 mt-8">
+    {links.map((link) => (
+      <a 
+      href={link.url} 
+          class="
+            border-2 border-primary px-12 py-4 rounded w-full text-center outline-none ring-offset-4 ring-offset-transparent
+            hover:text-black hover:bg-secondary hover:border-transparent
+            focus:ring-2 focus:ring-white/25
+            duration-200
+          " 
+          target={link.isInternalLink ? '_self' : '_blank'}
+        >
+          {link.text}
+        </a>
+      ))}
+    </section>  
+  </article>
+</LinkLayout>
+
