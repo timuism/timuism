@@ -1,38 +1,102 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import InlinePost from '../components/InlinePost.astro';
+import Link from '../components/Link.astro';
 
 let allPosts = await Astro.glob('./posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
 ---
 
-<Layout title="timuism | the online home of timothy long">
+<Layout title="Timothy Long">
 	<article class="">
-		<h1 class="text-4xl md:text-5xl leading-snug">
-      Hey, I'm Timothy! 
-    </h1>
+    <section>
+      <h1 class="text-xl text-white font-display font-medium leading-snug">
+        Timothy Long 
+      </h1>
 
-    <p class="text-xl md:text-2xl leading-snug mt-12">
-      I'm a user interface developer that loves building web apps. I'm always striving to create innovative and creative designs that will bring user experience to the next level. I'm passionate about creating unique applications that are both visually stimulating and functional.
-    </p>
+      <h2 class="text-lg font-sans text-gray-500">
+        User Interface Developer
+      </h2>
 
+      <p class="text-base  font-light tracking-wide mt-4 font-serif">
+        I'm a developer with experience crafting user interfaces on the small & large scale, building web applications, and helping small business create a web presence.
+      </p>
+
+      <table class="mt-4">
+        <tr>
+          <td class="text-gray-300 font-medium">Email</td>
+          <td class="pl-12"><Link href="mailto:tim@timuism.com">tim@timuism.net</Link></td>
+        </tr>
+        <tr>
+          <td class="text-gray-300 font-medium">Twitter</td>
+          <td class="pl-12"><Link href="https://twitter.com/itstimuism">@itstimuism</Link></td>
+        </tr>
+        <tr>
+          <td class="text-gray-300 font-medium">GitHub</td>
+          <td class="pl-12"><Link href="https://github.com/timuism">timuism</Link></td>
+        </tr>
+      </table>
+    </section>
 
     <section>
-      <h2 class="text-xl font-display font-bold mt-16">
+      <h2 class="text-lg text-gray-500 font-sans mt-24">
         Latest Posts
       </h2>
 
-      <section aria-label="Blog post list" class="mt-6 space-y-12">
+      <section aria-label="Blog post list" class="mt-4 space-y-6">
         {allPosts.map((p) => <InlinePost post={p} />)}
       </section>
 
-      <a href="/blog" class="inline-block text-xl font-display border-2 border-primary text-primary rounded px-8 py-2 mt-8 hover:bg-secondary hover:border-secondary hover:text-black duration-200">View all</a>
+      <a href="/blog" class="inline-block text-base font-display text-gray-500 mt-4 border-gray-500 border-b hover:text-gray-100 hover:border-gray-100 duration-200">View all posts</a>
     </section>
 
     <section>
-      <p>
-      </p>
-    </section>
+      <h2 class="text-lg text-gray-500 font-sans mt-24">
+        Work History
+      </h2>
+
+      <div class="mt-4">
+        <div class="md:grid md:grid-cols-4">
+          <div class="col-span-1 text-gray-300 text-lg">
+            <p>2021—Present</p>
+          </div>
+          <div class="col-span-3">
+            <h3 class="text-gray-100 text-xl font-sans font-medium">User Interface Developer</h3>
+            <h4 class="text-gray-300 text-base italic font-serif mt-1">Johns Hopkins University Applied Physics Laboratory</h4>
+
+            <ul class="space-y-4 mt-4">
+              <li>Designed and developed websites and applications for use by internal groups and teams with the organization.</li>
+              <li>Lead front-end development for a small team to build a data dashboard application using react, e-charts and Apollo client.</li>
+              <li>Developed the first interactive Annual Report for the entire organization.</li>
+              <li>Designed and developed an application to serve as a knowledge base for one of the lab's departments.</li>
+              <li>Created an application that connects with Microsoft SharePoint that has been adapted by multiple teams.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:grid md:grid-cols-4 mt-12">
+        <div class="col-span-1 items-start text-gray-300 text-lg">
+          <p>2017—2021</p>
+        </div>
+        <div class="col-span-3">
+          <h3 class="text-gray-100 text-xl font-sans font-medium">Web Developer</h3>
+          <h4 class="text-gray-300 text-base italic font-serif mt-1">Blue Ocean Ideas</h4>
+
+          <ul class="space-y-4 mt-4">
+            <li>Developed and maintained large MVC codebase that combined WordPress and Laravel.</li>
+            <li>Designed and developed premium membership feature for an application and was involved with both front and back end development.</li>
+            <li>Refactored code for application authentication with Auth0.</li>
+            <li>Developed front-end for e-learning and account settings features.</li>
+            <li>Developed front and back end for a custom page builder application.</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      </section>
+
   </article>
 </Layout>
 

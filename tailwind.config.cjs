@@ -6,11 +6,17 @@ module.exports = {
       'transparent': 'transparent',
       'white': '#efe5ee',
       'black': '#020202',
-      'primary': '#349980',
+      'gray': {
+        100: '#cfcfcf',
+        300: '#a0a0a0',
+        500: '#515151',
+        900: '#171717'
+      },
       'secondary': '#dc9300',
     },
     fontFamily: {
       'sans': ['Barlow', 'Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['Bitter', 'Georgia'],
       'display': ["'Barlow Condensed'", 'Helvetica', 'Arial', 'sans-serif']
     },
 		extend: {},
