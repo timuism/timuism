@@ -1,5 +1,6 @@
 ---
 import Link from '../components/Link.astro';
+import NavLink from '../components/NavLink.astro';
 import '../../assets/app.css'
 import '../../assets/fonts/barlow-v12-latin/barlow.css'
 import '../../assets/fonts/bitter-v32-latin/bitter.css'
@@ -22,17 +23,20 @@ const { title } = Astro.props;
 	</head>
 
 	<body class="font-sans antialiased bg-gray-900 max-w-screen-lg mx-auto mb-32 text-gray-100">
-    <main class="md:pt-12 md:min-h-screen flex flex-col md:flex-row items-start justify-center md:space-x-24">
-      <!-- <div class="w-full md:w-[200px] p-4">
-        <header class="px-4 md:text-right">
-          <h1 class="text-2xl font-display font-bold italic tracking-wider text-secondary">
-            <a href="/" class="w-[50px] h-[50px] mb-4 md:mb-0 md:w-[100px] md:h-[100px] inline-block rounded-full overflow-hidden border-2 border-transparent hover:animate-pulse hover:border-secondary hover:rotate-12 duration-200">
-              <img src={MeHeader} alt="Photo of Tim Long" class="object-cover" />
-            </a>
-          </h1>
-        </header>
-      </div> -->
-      <section class="shrink w-full min-w-[320px] md:max-w-[640px] p-12 md:pb-0 md:px-0">
+    <main class="md:pt-12 flex flex-col items-start justify-center">
+      <nav class="w-full mt-12 md:mt-4 border-b border-gray-100/5 px-12 md:px-0">
+        <h1 class="text-xl text-white font-display font-medium leading-snug">
+          Timothy Long 
+        </h1>
+
+        <ul class="flex space-x-8 py-4">
+          <li><NavLink href="/blog">Blog</NavLink></li>
+          <li><NavLink href="/projects">Projects</NavLink></li>
+          <li><NavLink href="/work-history">Work History</NavLink></li>
+        </ul>
+      </nav>
+
+      <section class="grow w-full min-w-[320px] md:max-w-[640px] p-12 md:pb-0 md:px-0">
         <slot />
       </section>
     </main>

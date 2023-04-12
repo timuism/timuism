@@ -9,7 +9,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
 <Layout title="blog | timuism | the online home of timothy long">
 	<article>
-		<h2 class="text-2xl">Blog</h2>
+		<h2 class="text-lg text-gray-500 font-sans mt-12">Blog</h2>
     <section aria-label="Blog post list" class="mt-12 space-y-12">
       {allPosts.map((p) => <InlinePost post={p} />)}
   </section>

@@ -1,0 +1,132 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+//@todo: list recent work:
+/**
+ * dagger website
+ * jhuapl diversity inclusion annual report
+ * 2021 annual report
+ * purpose ova everything
+ * laruta (macpa.org | msba.org | cocpa.org)
+ * maybe: onepage app (if i can remove all things related to hopkins)
+ * maybe: basestack ui elements/components
+ * maybe: tang inspire app (requires rebranding)
+ * maybe: campus maps
+ *
+ */
+const projects = [
+  {
+    name: "Dagger Application by JHU APL",
+    description: "",
+    url: "https://www.jhuapl.edu/dagger/",
+  },
+  {
+    name: "2021 Diversity & Inclusion Annual Report for Johns Hopkins University Applied Physics Laboratory",
+    description: "",
+    url: "https://www.jhuapl.edu/Diversity-Inclusion-Annual-Report-2021/",
+  },
+  {
+    name: "Purpose Ova Everything",
+    description: "Custom Shopify Theme for a clothing & apparel business",
+    url: "https://purposeovaeverything.com",
+  },
+];
+---
+
+<Layout title="recent work | timuism | the online home of timothy long">
+  <article>
+    <h2 class="text-lg text-gray-500 font-sans mt-12">Work History</h2>
+
+    <div class="mt-24">
+      <div class="md:grid md:grid-cols-4">
+        <div class="col-span-1 text-gray-300 text-lg">
+          <p>2021—Present</p>
+        </div>
+        <div class="col-span-3">
+          <h3 class="text-gray-100 text-xl font-sans font-medium">
+            User Interface Developer
+          </h3>
+          <h4 class="text-gray-300 text-base italic font-serif mt-1">
+            Johns Hopkins University Applied Physics Laboratory
+          </h4>
+
+          <ul class="space-y-4 mt-4">
+            <li>
+              Designed and developed websites and applications for use by
+              internal groups and teams with the organization.
+            </li>
+            <li>
+              Lead front-end development for a small team to build a data
+              dashboard application using react, e-charts and Apollo client.
+            </li>
+            <li>
+              Developed the first interactive Annual Report for the entire
+              organization.
+            </li>
+            <li>
+              Designed and developed an application to serve as a knowledge base
+              for one of the lab's departments.
+            </li>
+            <li>
+              Created an application that connects with Microsoft SharePoint
+              that has been adapted by multiple teams.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:grid md:grid-cols-4 mt-12">
+      <div class="col-span-1 items-start text-gray-300 text-lg">
+        <p>2017—2021</p>
+      </div>
+      <div class="col-span-3">
+        <h3 class="text-gray-100 text-xl font-sans font-medium">
+          Web Developer
+        </h3>
+        <h4 class="text-gray-300 text-base italic font-serif mt-1">
+          Blue Ocean Ideas
+        </h4>
+
+        <ul class="space-y-4 mt-4">
+          <li>
+            Developed and maintained large MVC codebase that combined WordPress
+            and Laravel.
+          </li>
+          <li>
+            Designed and developed premium membership feature for an application
+            and was involved with both front and back end development.
+          </li>
+          <li>Refactored code for application authentication with Auth0.</li>
+          <li>
+            Developed front-end for e-learning and account settings features.
+          </li>
+          <li>
+            Developed front and back end for a custom page builder application.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="md:grid md:grid-cols-4 mt-12">
+      <div class="col-span-1 items-start text-gray-300 text-lg">
+        <p>2009—2019</p>
+      </div>
+      <div class="col-span-3">
+        <h3 class="text-gray-100 text-xl font-sans font-medium">
+          Mac Technician
+        </h3>
+        <h4 class="text-gray-300 text-base italic font-serif mt-1">
+          Apple Inc
+        </h4>
+
+        <ul class="space-y-4 mt-4">
+          <li>
+            Repaired Macs and iPhones as am Apple Certified Macintosh Technician
+          </li>
+          <li>Facilitated Market-wide training for prospective technicians</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</Layout>
