@@ -16,8 +16,8 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Barlow', 'Helvetica', 'Arial', 'sans-serif'],
-      'serif': ['Bitter', 'Georgia'],
-      'display': ["'Barlow Condensed'", 'Helvetica', 'Arial', 'sans-serif']
+      'serif': ['Courier', "'Courier New'", 'Georgia'],
+      'display': ["'Courier Prime'", 'Courier', "'Courier New'", 'Arial', 'sans-serif']
     },
 		extend: {},
 	},
