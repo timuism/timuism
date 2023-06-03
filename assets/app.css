@@ -31,6 +31,22 @@
   @apply border-l-4 border-secondary pl-8 py-0 mt-8 space-y-4;
 }
 
+.post-content code {
+  @apply bg-gray-500/50 text-secondary text-sm p-0.5 rounded-sm;
+}
+
+.post-content table {
+  @apply border border-gray-500/75 my-4;
+}
+
+.post-content th {
+  @apply text-left p-2;
+}
+
+.post-content table td {
+  @apply p-2 border border-gray-500;
+}
+
 pre.astro-code {
   @apply px-6 py-6 my-6 text-sm rounded-md md:text-base;
 }
