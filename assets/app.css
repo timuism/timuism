@@ -6,13 +6,29 @@
   @apply text-lg;
 }
 
-.post-content > * + *, 
+.post-content > * + *,
 .markup-p + .markup-p {
   @apply pt-6;
 }
 
 .post-content p {
   @apply max-w-screen-md mx-auto leading-relaxed;
+}
+
+.post-content h2 {
+  @apply text-4xl font-light mt-10;
+}
+
+.post-content h3 {
+  @apply text-3xl font-semibold mt-8;
+}
+
+.post-content img {
+  @apply rounded-md  mx-auto my-4 border-2 border-gray-500/25;
+}
+
+.post-content blockquote {
+  @apply border-l-4 border-secondary pl-8 py-0 mt-8 space-y-4;
 }
 
 pre.astro-code {
