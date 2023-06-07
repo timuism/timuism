@@ -6,7 +6,7 @@ author: Tim Long
 description: Use pm2 to automate the startup of scripts on a server
 ---
 
-![Annotated Photo of me. There is a yellow line drawn that is meant to loosely trace the path of the ulnar nerve from the back of the head into fingers.](../../../assets/images/posts/ulnar-nerve/ulnarnervecover.jpg)
+![Annotated Photo of me. There is a yellow line drawn that is meant to loosely trace the path of the ulnar nerve from the back of the head into fingers.](../../../src/assets/images/posts/ulnar-nerve/ulnarnervecover.jpg)
 
 As a frontend web developer, I find myself sitting at a desk all day. Recently, that has become a challenge because of numbness, tingling, and mild pain in my arms due to ulnar nerve entrapment. Dealing with it has been a challenge. Frequent discomfort tied to things to that we love to do can be heart breaking. I have fear that if things get worse, I’ll be unable to type which would affect my livelihood. However, I try to focus on the positives and choose to take action to maximize comfort and encourage healing.
 
@@ -30,7 +30,7 @@ _[Lahav Constantini - “Ulnar Nerve Entrapment"](https://www.osmosis.org/answer
 
 Imagine hitting your funny bone. How does that feel? Kinda uncomfortable, right? Now imagine that sensation lasting not just a few seconds, but all day. Two days. Three days or more. If you can agree that the idea of that is unpleasant, then you can see why ulnar nerve entrapment can become a big issue.
 
-![Annotated photo of a close up of my right arm, with another nerve tracing in yellow. It says “not exact…” in the corner to imply the tracing is not exactly path of the nerve](../../../assets/images/posts/ulnar-nerve/arm.jpg)
+![Annotated photo of a close up of my right arm, with another nerve tracing in yellow. It says “not exact…” in the corner to imply the tracing is not exactly path of the nerve](../../../src/assets/images/posts/ulnar-nerve/arm.jpg)
 
 I have been living with an very mild level of entrapment for quite some time. Very minor flare up would come an ago and make some very physical movements with my arm feel strange and maybe a little tingly afterwards. It wasn’t under the start of the calendar year that things began to get worse and affect my work.
 
@@ -51,9 +51,9 @@ After a follow up visit to the doctor and flare ups still happening, I made an a
 
 <figure class="grid grid-cols-2 gap-4">
 
-![Annotate photo of me playing the bass while wearing a padded elbow sleeve. The sleeve is emphasize with tracing and an arrow in pink](../../../assets/images/posts/ulnar-nerve/playingbass.jpg)
+![Annotate photo of me playing the bass while wearing a padded elbow sleeve. The sleeve is emphasize with tracing and an arrow in pink](../../../src/assets/images/posts/ulnar-nerve/playingbass.jpg)
 
-![Photo of my right arm while wearing an arm brace. Annotated accents around the brace in pink](../../../assets/images/posts/ulnar-nerve/arminbrace.jpg)
+![Photo of my right arm while wearing an arm brace. Annotated accents around the brace in pink](../../../src/assets/images/posts/ulnar-nerve/arminbrace.jpg)
 
 </figure>
 
@@ -61,7 +61,7 @@ After a follow up visit to the doctor and flare ups still happening, I made an a
 
 I recently switched from an iPhone 12 Pro to a Galaxy S23 Ultra. I should’ve, but didn’t, anticipate the size and weight of the large phone. It also made me realize that the way I’ve always held iPhones might be a factor (I use my pinky as a base at the bottom during one-handed use). The extra weight made it much worse very quickly so 3 days into using the ultra I attached a Pop Socket to it. I almost regret not using one sooner.
 
-![Close up of my phone with an annotated yellow circle around the attached Pop Socket.](../../../assets/images/posts/ulnar-nerve/holdingphone.jpg)
+![Close up of my phone with an annotated yellow circle around the attached Pop Socket.](../../../src/assets/images/posts/ulnar-nerve/holdingphone.jpg)
 
 Close up of my phone with an annotated yellow circle around the attached Pop Socket.
 
@@ -71,13 +71,13 @@ This was an immediate improvement. I still had an iPhone 11 for work that was cl
 
 Now I haven’t mentioned it yet but I was dealing with symptoms mostly in my right hand. The culprit causing flares up when working was actually the mouse! Because of this, I started exploring different arm and wrists positions and trying to hold the mouse differently. That one was kind of mute because the shape of the specific mouse makes that a little difficult. I ended up ordering a more ergonomic mouse.
 
-![Photo of the mice I've used. Annotated icons below the mice indicating the Logi Lift is the winner.](../../../assets/images/posts/ulnar-nerve/mouse.jpg)
+![Photo of the mice I've used. Annotated icons below the mice indicating the Logi Lift is the winner.](../../../src/assets/images/posts/ulnar-nerve/mouse.jpg)
 
 Photo of the mice I've used. Annotated icons below the mice indicating the Logi Lift is the winner.
 
 This new “sideways” mouse helped some. Some of the discomfort in my pinky went away but there was still some where my wrist rested on the desk. This led to buying a wrist rest.
 
-![Overhead photo of my desk. Annotated lines around the keyboard, mouse and wrist pad.](../../../assets/images/posts/ulnar-nerve/mydesk.jpg)
+![Overhead photo of my desk. Annotated lines around the keyboard, mouse and wrist pad.](../../../src/assets/images/posts/ulnar-nerve/mydesk.jpg)
 
 Overhead photo of my desk. Annotated lines around the keyboard, mouse and wrist pad.
 
@@ -92,8 +92,6 @@ I have a standing desk at my work office. I noticed that when standing, symptoms
 This has become the most fun and exciting part of all of this. Trying to reduce mouse usage has productivity benefits that I’ve already started to noticed. There has been a lot of experimentation in this area. This could be its own article but I am thinking of also breaking this up into its own video or a series of videos.
 
 Before all this, my friend and co-worker had been pushing me to to try vim. He thought I’d like it so every now and then he’d give me a nudge. I hadn’t really explored what vim was and how it was used, but once I decided to look into reducing mouse usage, I hit up youtube. Installed the extension for VS Code, and a few months later, I’m trying looking at going full terminal.
-
-— provide video links resources —
 
 It has been about a month and half since I started learning vim. I am definitely still slower at certain things, and I find sometimes I end up living in `insert` mode for way longer than I should. But I’ve gotten pretty committed to practice it and can see me working way faster with it by this time next year. This has led me to wanting to learn how to properly touch type, and use more command line tools.
 

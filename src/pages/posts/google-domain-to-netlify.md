@@ -29,17 +29,4 @@ From here, look for **Custom Records**. It should be just a little ways down the
 
 Click **Manage Custom Records**. From here, you should see a row with empty fields and a button to add a new record. This first field we will use to set up the subdomain record.
 
-Click the select element to choose the type of record, and select `CNAME`. Enter `www` in the hostname field, and `your-site-name.netlify.app` in the data field.
-
-Now, for the Apex record, add a new record. This time in the dropdown choose `A`. This is different from `ANAME` (Google domains don't support ANAME). Leave the hostname blank, and in the data field, add `75.2.60.5`.
-
-Your records should look like:
-
-| Host name          | Type  | TTL    | Data                 |
-| ------------------ | ----- | ------ | -------------------- |
-| yourdomain.com     | A     | 1 hour | 75.2.60.5            |
-| www.yourdomain.com | CNAME | 1 hour | yoursite.netlify.app |
-
-And now… we wait!
-
-It can take up to 24 hours for it to start working, so exercise some patience young padawan and you’ll should be good to go!
+Click the select element to choose the type of record, and select CNAME. Enter `www` in the hostname field, and `your-site-name.netlify.app` in the data field.
