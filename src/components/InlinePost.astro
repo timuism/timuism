@@ -8,9 +8,9 @@ const { post } = Astro.props;
 
 <article class="max-w-screen-md mx-auto">
 	<header class="mb-4">
-    <a href={post.url} class="group">
-      <h2 class="text-base font-serif text-gray-100 group-hover:text-secondary duration-200">{post.frontmatter.title}</h2>
-      <p class="text-sm text-gray-500 group-hover:text-secondary font-sans font-medium uppercase tracking-wider duration-200">{post.frontmatter.publishDate}</p>
+    <a href={post.url} class="group outline-none">
+      <h2 class="text-base font-serif text-gray-100 group-focus:text-secondary group-hover:text-secondary duration-200">{post.frontmatter.title}</h2>
+      <p class="text-sm text-gray-500 group-focus:text-secondary group-hover:text-secondary font-sans font-medium uppercase tracking-wider duration-200">{post.frontmatter.publishDate}</p>
     </a>
 	</header>
 </article>

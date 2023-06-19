@@ -63,3 +63,7 @@ pre.astro-code {
 .post-content ol {
   @apply list-decimal;
 }
+
+.post-content a {
+  @apply outline-none text-secondary focus:underline hover:underline focus:text-secondary duration-200;
+}
