@@ -14,5 +14,9 @@ export default defineConfig({
   ],
   experimental: {
     assets: true,
+    redirects: true
   },
+  redirects: {
+    '/superpanels': 'https://starlit-taffy-642d8e.netlify.app/'
+  }
 });
