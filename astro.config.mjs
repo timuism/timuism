@@ -17,6 +17,13 @@ export default defineConfig({
     redirects: true
   },
   redirects: {
-    '/superpanels': 'https://starlit-taffy-642d8e.netlify.app/'
+    '/superpanels': 'https://starlit-taffy-642d8e.netlify.app/',
+    '/norahsparty': 'https://norahsparty.netlify.app/',
+    '/norahsparty/aliyah': 'https://norahsparty.netlify.app/vip/aliyah',
+    '/norahsparty/ariel': 'https://norahsparty.netlify.app/vip/ariel',
+    '/norahsparty/rihlah': 'https://norahsparty.netlify.app/vip/rihlah',
+    '/norahsparty/bella': 'https://norahsparty.netlify.app/vip/bella',
+    '/norahsparty/cali': 'https://norahsparty.netlify.app/vip/cali',
+    '/norahsparty/norah': 'https://norahsparty.netlify.app/vip/norah',
   }
 });
