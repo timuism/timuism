@@ -25,5 +25,6 @@ export default defineConfig({
     '/norahsparty/bella': 'https://norahsparty.netlify.app/vip/bella',
     '/norahsparty/cali': 'https://norahsparty.netlify.app/vip/cali',
     '/norahsparty/norah': 'https://norahsparty.netlify.app/vip/norah',
+    '/norahsparty/jade-and-justice': 'https://norahsparty.netlify.app/vip/jade-and-justice',
   }
 });
