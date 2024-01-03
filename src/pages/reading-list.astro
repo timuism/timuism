@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const readingList = [
+  {
+    title: '1493: Uncovering the New World Columbus Created',
+    author: 'Charles C. Mann',
+    currentlyReading: true,
+  },
+  {
+    title: "Black skin, white masks",
+    author: "Frantz Fanon",
+    currentlyReading: true,
+  },
+  {
+    title: 'Invisible Man',
+    author: 'Ralph Ellison',
+  },
+  {
+    title: 'Is God a White Racist?',
+    author: 'William R. Jones',
+  },
+  {
+    title: 'Caste: Origins of Our Discontents',
+    author: 'Isabel Wilkerson',
+  },
+  {
+    title: 'Blueprint for Black Power: A Moral, Political, and Economic Imperative for the Twenty-First Century',
+    author: 'Amos N. Wilson',
+  },
+  {
+    title: 'Braiding Sweetgrass',
+    author: 'Robin Wall Kimmerer',
+  },
+  {
+    title: 'Black Marxism: The Making of the Black Radical Tradition',
+    author: 'Cedric J. Robinson',
+  },
+  {
+    title: 'Parable of the Sower (Reread)',
+    author: 'Octavia E. Butler',
+  },
+  {
+    title: 'Post traumatic slave syndrome',
+    author: 'Joy DeGruy',
+  },
+];
+---
+
+<Layout title="Reading List | Timothy Long">
+  <article>
+    <h2 class="text-lg text-gray-500 font-sans mt-12 ml-4">Reading List (not in order, and not all of it)</h2>
+    <ul class="mt-12 space-y-4 md:pr-24">
+      {readingList.map((item, index) => (
+        <li>
+          <div class="group block border-2 border-transparent outline-none rounded p-4 duration-200">
+            <h3 class="font-display font-semibold text-lg text-primary duration-200">{item.title}</h3>
+            <p class="mt-1 text-base font-sans font-medium italic">{item.author}
+            {item.currentlyReading && (
+              <span class="mt-1 ml-2 px-2 py-1 rounded-sm text-xs font-sans inline-block font-semibold uppercase tracking-wider text-primary text-black bg-secondary">Currently Reading</span>
+            )}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </article>
+</Layout>
+
