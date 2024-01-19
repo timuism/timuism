@@ -6,21 +6,77 @@ import NavLink from '../components/NavLink.astro';
 
 let allPosts = await Astro.glob('./posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+
+const lovesWorkingWith = [
+  'Typescript', 'Tailwind CSS', 'Vue', 'Nuxt', 'Astro', 'GSAP'
+]
+
+const alsoHasExpWith = [
+  'React', 'Next', 'SCSS', 'LESS', 'PHP', 'Laravel', 'Wordpress', 'Shopify', 'D3', 'jQuery', 'GraphQL', 'MySQL'
+]
 ---
 
 <Layout title="Timothy Long">
 	<article>
     <section>
-      <p class="text-base font-light tracking-wide mt-4 font-serif">
-        I'm a software engineer with six years of experience in building web sites and applications. My focus is mostly in front-end development but I am able to design user interfaces and I have also worked in the back-end. I am looking for mid/senior roles that will push me to strengthen my leadership and mentoring skills.
-      </p>
+      <div class="space-y-6">
+        <p class="text-base font-light tracking-wide mt-4 font-serif">
+          I'm a software engineer with six years of experience in building web sites and applications. My focus is mostly in front-end development but I am able to design user interfaces and I have also worked in the back-end.  
+        </p>
+        <p>
+          I'm currently available for freelance work (development and consulting), and also open to mid/senior roles that will push me to strengthen my leadership and mentoring skills.
+        </p>
 
-      <p class="text-base font-light tracking-wide mt-4 font-serif">
-        I am also a musician, father, Star Wars nerd, casual gamer and Black atheist. If any of those things interest you, then I encourage you to check out my <Link href="/blog">blog</Link> and/or <Link href="https://www.youtube.com/channel/UCVCY5V1UVF8NtaIOV0ye3vQ">YouTube channel</Link>.
-      </p>
+        <p>
+          Say hello by <Link href="mailto:tim@timuism.com" >sending me an email</Link> if you'd like to work together or just chat!
+        </p>
+      </div>
 
-      <h3 class="mt-8 font-medium">Quick Links</h3>
-      <table class="mt-4">
+      
+      <div class="mt-8 pl-6 border-l-2 border-secondary">
+        <h3 class="text-secondary text-xs font-sans font-medium inline-block leading-none">Recent Work</h3>
+        <ul class="mt-2 space-y-6">
+          <li>
+            <div>
+              <h4 class="font-sans">DART One Year: From Impact to Innovation</h4>
+              <p class="text-sm my-2">Myself and another developer tag-teamed this interactive website and had a lot of fun with gsap timelines with Nuxt.</p>
+              <Link href="https://secwww.jhuapl.edu/dart-one-year-anniversary/" target>View DART One Year site</Link>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4 class="font-sans">2022 Annual Report for JHU APL</h4>
+              <p class="text-sm my-2">Developed the interface and content management for the Applied Physics Laboratory's Annual Report.</p>
+              <Link href="https://secwww.jhuapl.edu/2022-Annual-Report/" target>View Annual Report</Link>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4 class="font-sans">2022 Diversity, Equity and Inclusion Annual Report for JHU APL</h4>
+              <p class="text-sm my-2">Lead development & content management for the DEI report for the Applied Physics Laboratory.</p>
+              <Link href="https://www.jhuapl.edu/Diversity-Equity-Inclusion-Annual-Report-2022/" target>View DEI Report</Link>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4 class="font-sans">JHU APL Website</h4>
+              <p class="text-sm my-2">Served as a technical consultant for APL's primary external website.</p>
+              <Link href="https://secwww.jhuapl.edu/2022-Annual-Report/" target>View APL Website</Link>
+            {</div>
+          </li>
+          <li>
+            <div>
+              <h4 class="font-sans">MSBA Website</h4>
+              <p class="text-sm my-2">Developed many front-end components, the page-builder for marketing pages and premium features for members.</p>
+              <Link href="https://www.msba.org" target>View MSBA.org</Link>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-8 border-secondary">
+      <h3 class="mt-8 text-secondary text-xs font-sans font-medium">Let's Connect</h3>
+      <table class="mt-2">
         <tr>
           <td class="text-gray-300 font-medium">Twitter</td>
           <td class="pl-16"><Link href="https://twitter.com/timuism">@timuism</Link></td>
@@ -36,6 +92,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
       </table>
 
       <p class="mt-4">Check out my <Link href="/linktree">links</Link> page for more of my socials and links</p>
+      </div>
     </section>
   </article>
 </Layout>
