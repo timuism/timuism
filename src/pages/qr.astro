@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import QrCode from "../assets/images/qr-code.png";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+
+interface LinkInterface {
+  url: string;
+  text: string;
+  isInternalLink?: boolean;
+}
+
+// @todo: add order prop for manual sorting
+const links: LinkInterface[] = [
+  {
+    url: "/",
+    text: "My Website",
+    isInternalLink: true,
+  },
+  {
+    url: "https://twitter.com/timuism",
+    text: "Twitter",
+  },
+  {
+    url: "https://instagram.com/timuism",
+    text: "Instagram",
+  },
+  {
+    url: "https://www.youtube.com/channel/UCVCY5V1UVF8NtaIOV0ye3vQ",
+    text: "YouTube",
+  },
+  {
+    url: "https://linkedin.com/in/timuism",
+    text: "LinkedIn",
+    isInternalLink: true,
+  },
+];
+---
+
+<Layout title="Links | timuism | the online home of timothy long">
+  <div class="w-full">
+    <h2 class="md:ml-16 w-full text-center md:text-left text-xl text-secondary font-sans mt-12">Let's connect!</h2>
+  <article class="mt-6 font-medium w-full max-w-[400px] rounded-lg border-2 border-secondary p-6">
+      <section class="flex flex-col items-start space-y-6">
+        <figure class="w-full  rounded-lg overflow-hidden">
+          <Image src={QrCode} alt="QR Code" class="object-cover" />
+        </figure>
+      </section>
+    </article>
+        <div class="w-full text-center md:text-left mt-6 md:ml-16">
+          <Link href="/links">View Links</Link>
+        </div>
+  </div>
+</Layout>
