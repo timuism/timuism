@@ -25,3 +25,9 @@ As you continue to learn, you may find that there are certain things to you real
 
 ### Practice, practice, practice
 I do a lot of the same things every day and in every project. This is a great, because I get more efficient everytime I do it, but then you can easily forget other concepts that you rarely touch. These days, I am mostly building interfaces. I'm pulling data from backends and APIs so besides looping and mapping, I don't find that I am doing a lot of complex logic. The fix for this is to find ways to flex those other skills.
+
+### Having a little design knowledge goes a long way
+As a developer I think it is understated how crucial having an understanding of design and some of the common design tools can be especially if you are developing user interfaces or working in the front-end. Don't shy away from opening up Figma. Understanding the way designers are building sites can help with communicating how we go about developing their designs. It also goes along way if you are able to provide not only feedback, but alternate solutions to designs.
+
+### Read the documentation first
+Sure there are plenty of tutorials out there that might work for a particular task. However nothing replaces reading documentation. There is often more than one way to accomplish something. If you find that you are often lost and relying too often on tutorials then it can make debugging and troubleshooting a big headache.
