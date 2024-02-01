@@ -115,7 +115,7 @@ onMounted(() => {
       </section>
     </main>
 
-    <footer class="mt-12 w-full max-w-screen-lg mx-auto px-4 py-8 md:px-24">
+    <footer class="mt-12 w-full max-w-screen-lg mx-auto p-8 md:px-24">
       <div class="text-left">
         <p class="text-sm text-gray-500">
           &copy; {{ new Date().getFullYear() }} Timothy Long. All rights reserved.

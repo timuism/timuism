@@ -73,7 +73,7 @@
           </tr>
         </table>
 
-        <p class="mt-4">Check out my <InlineLink href="/links">Links</InlineLink> page for more of my socials and InlineLinks</p>
+        <p class="mt-4">Check out my <InlineLink href="/links">Links</InlineLink> page for more of my socials and links.</p>
       </div>
     </section>
   </article>
