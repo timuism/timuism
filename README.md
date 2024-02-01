@@ -1,14 +1,75 @@
-# Hello! I'm Tim Long. 
+# Nuxt 3 Minimal Starter
 
-I'm a user interface designer and front-end developer. I'm also a musician and artist. I've always like to create things and build systems that are both elegant and easy to use.
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Currently Learning
-- Nuxt 3 expertise
-- Strengthening my React foundation
-- Reviewing PHP and Back-end development fundamentals
+## Setup
 
-[View my website](https://timuism.net)
+Make sure to install the dependencies:
 
+```bash
+# npm
+npm install
 
+# pnpm
+pnpm install
 
+# yarn
+yarn install
 
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
