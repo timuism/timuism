@@ -1,8 +1,8 @@
 <template>
-  <article class="post-content">
+  <article class="post-content w-full">
     <ContentDoc v-slot="{ doc }">
       <h2>{{ doc.title }}</h2>
-      <div class="post-md mt-4">
+      <div class="post-md mt-4 w-full">
         <ContentRenderer :value="doc" />
       </div>
     </ContentDoc>
@@ -36,7 +36,7 @@
 }
 
 .post-content code {
-  @apply bg-black text-secondary text-sm p-0.5 my-1 rounded;
+  @apply bg-black text-secondary text-sm p-0.5 my-1 rounded overflow-x-auto;
 }
 
 .post-content table {
@@ -52,7 +52,7 @@
 }
 
 pre.shiki {
-  @apply bg-black px-3 my-6 text-sm rounded-md overflow-x-auto md:text-base;
+  @apply bg-black block w-full px-3 my-6 text-sm rounded-md whitespace-pre-wrap md:whitespace-nowrap overflow-x-auto md:text-base;
 }
 
 .post-content ul,

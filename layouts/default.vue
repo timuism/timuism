@@ -37,7 +37,7 @@ onMounted(() => {
 <template>
   <div class="wrapper w-full font-serif antialiased bg-gray-900 text-gray-100">
     <main class="w-full max-w-screen-lg mx-auto md:px-24 px-4 md:pt-12 flex flex-col items-start justify-center">
-      <nav class="w-full mt-12 md:mt-4 border-b border-gray-100/5 px-6 py-2 space-y-4 md:px-0">
+      <nav class="w-full mt-12 md:mt-4 border-b border-gray-100/5 md:px-6 py-2 space-y-4 px-0">
         <div class="flex justify-between mb-6 md:mb-0 md:block">
           <h1 ref="h1" class="opacity-0 -translate-x-9 site-h1 text-2xl text-white font-sans font-normal tracking-tight leading-snug">
             <NuxtLink to="/"
@@ -110,7 +110,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <section ref="content" class="opacity-0 grow w-full min-w-[320px] md:max-w-[640px] p-10 md:pb-0 md:px-0">
+      <section ref="content" class="opacity-0 grow w-full min-w-[320px] md:max-w-[640px] p-4 md:p-10 md:pb-0">
         <slot />
       </section>
     </main>
