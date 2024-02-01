@@ -76,7 +76,7 @@ onMounted(() => {
 
 
       <div :class="showMobileNav ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'"
-        class="fixed w-screen h-[100dvh] overflow-hidden bg-black/75 backdrop-blur top-0 left-0 md:hidden duration-500">
+        class="fixed z-10 w-screen h-[100dvh] overflow-hidden bg-black/75 backdrop-blur top-0 left-0 md:hidden duration-500">
         <div :class="showMobileNav ? 'translate-y-0' : 'translate-y-full'"
           class="absolute bottom-0 left-0 w-full duration-150">
 
