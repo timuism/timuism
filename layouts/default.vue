@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
-gsap.registerPlugin(ScrollTrigger)
 
 const showMobileNav = ref(false)
 const h1 = ref(null)
