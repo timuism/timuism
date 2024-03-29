@@ -52,7 +52,7 @@
 }
 
 pre.shiki {
-  @apply bg-black block w-full px-3 my-6 text-sm rounded-md whitespace-pre-wrap md:whitespace-nowrap overflow-x-auto md:text-base;
+  @apply bg-black block w-full px-3 my-6 text-xs rounded-md overflow-x-auto md:text-sm;
 }
 
 .post-content ul,

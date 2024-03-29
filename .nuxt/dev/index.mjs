@@ -1,4 +1,5 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import { Server } from 'node:http';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/tim/www/timuism/node_modules/node-fetch-native/dist/polyfill.mjs';
+import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
@@ -170,7 +171,7 @@ const _inlineRuntimeConfig = {
       },
       "highlight": {
         "theme": {
-          "default": "rose-pine-moon"
+          "default": "solarized-dark"
         }
       },
       "wsUrl": "ws://localhost:4000/",
@@ -190,7 +191,7 @@ const _inlineRuntimeConfig = {
   "mdc": {
     "highlight": {
       "theme": {
-        "default": "rose-pine-moon"
+        "default": "solarized-dark"
       },
       "preload": "",
       "wrapperStyle": ""
@@ -198,7 +199,7 @@ const _inlineRuntimeConfig = {
   },
   "content": {
     "cacheVersion": 2,
-    "cacheIntegrity": "DVV347NUxa",
+    "cacheIntegrity": "YxeoWAsZpj",
     "transformers": [],
     "base": "",
     "api": {
@@ -223,7 +224,7 @@ const _inlineRuntimeConfig = {
     "defaultLocale": "",
     "highlight": {
       "theme": {
-        "default": "rose-pine-moon"
+        "default": "solarized-dark"
       }
     },
     "markdown": {

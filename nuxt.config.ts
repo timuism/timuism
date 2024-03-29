@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: {
-        default: "rose-pine-moon",
+        default: "solarized-dark",
       }
     }
   },

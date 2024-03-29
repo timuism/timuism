@@ -10,7 +10,7 @@
         :query="{
           path: 'posts',
           sort: [{
-            title: -1
+            num: -1
           }]
         }" 
         v-slot="{ list }"
