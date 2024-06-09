@@ -70,10 +70,6 @@
         <h3 class="mt-8 text-secondary text-xs font-sans font-medium">Let's Connect</h3>
         <table class="mt-2">
           <tr>
-            <td class="text-gray-300 font-medium">Twitter</td>
-            <td class="pl-16"><InlineLink href="https://twitter.com/timuism">@timuism</InlineLink></td>
-          </tr>
-          <tr>
             <td class="text-gray-300 font-medium">GitHub</td>
             <td class="pl-16"><InlineLink href="https://github.com/timuism">timuism</InlineLink></td>
           </tr>
