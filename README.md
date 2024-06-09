@@ -1,6 +1,7 @@
 # Hello! I'm Tim Long. 
 
-I'm a user interface designer and front-end developer. I'm also a musician and artist. I've always like to create things and build systems that are both elegant and easy to use.
+I am a software engineer with a focus on user interface development on the web. I have seven years of experience and I love it. I am unable to share professional project on my GitHub, but you can [explore some of the finished products on my website](https://timuism.net). Feel free to reach out if you have any questions.
+
 
 ## Currently Learning
 - Nuxt 3 expertise
