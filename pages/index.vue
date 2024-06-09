@@ -6,7 +6,7 @@
           I'm a software engineer with  ~{{(new Date().getFullYear()) - 2017}} years of experience in building web sites and applications. My focus is mostly in front-end development but I am able to design user interfaces and I have also worked in the back-end.  
         </p>
         <p>
-          I'm currently available for freelance work (development and consulting) and also open to mid/senior roles that will push me to strengthen my leadership and mentoring skills.
+          I am currently looking for new opportunities (both full-time, part-time or freelance) so feel free to reach out if you think I'd be a good fit for your team or project. 
         </p>
 
         <p>
@@ -20,6 +20,13 @@
         <ul class="mt-2 space-y-6">
           <li>
             <div>
+              <h4 class="font-sans font-semibold">Into Vanishing Ice</h4>
+              <p class="text-sm my-2">A 4-part scrollytelling website about Arctic research done by JHU APL. Built with Vue.</p>
+              <InlineLink href="https://secwww.jhuapl.edu/johns-hopkins-apl-arctic-climate-research/" target>View Scrollytelling Site</InlineLink>
+            </div>
+          </li>
+          <li>
+            <div>
               <h4 class="font-sans font-semibold">DART One Year: From Impact to Innovation</h4>
               <p class="text-sm my-2">Another developer and I tag-teamed this interactive website and had a lot of fun with gsap timelines with Nuxt.</p>
               <InlineLink href="https://secwww.jhuapl.edu/dart-one-year-anniversary/" target>View DART One Year site</InlineLink>
@@ -27,16 +34,26 @@
           </li>
           <li>
             <div>
-              <h4 class="font-sans font-semibold">2022 Annual Report for JHU APL</h4>
+              <h4 class="font-sans font-semibold">Annual Reports for JHU APL</h4>
               <p class="text-sm my-2">Developed the interface and content management for the Applied Physics Laboratory's Annual Report.</p>
-              <InlineLink href="https://secwww.jhuapl.edu/2022-Annual-Report/" target>View Annual Report</InlineLink>
+              <p class="space-x-2">
+                <span class="font-sans font-semibold">Explore Annual Reports:</span>
+                <InlineLink href="https://secwww.jhuapl.edu/2023-Annual-Report/" target>2023</InlineLink>
+                <InlineLink href="https://secwww.jhuapl.edu/2022-Annual-Report/" target>2022</InlineLink>
+                <InlineLink href="https://secwww.jhuapl.edu/2021-Annual-Report/" target>2021</InlineLink>
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <h4 class="font-sans font-semibold">2022 Diversity, Equity and Inclusion Annual Report for JHU APL</h4>
+              <h4 class="font-sans font-semibold">Diversity, Equity and Inclusion Annual Reports for JHU APL</h4>
               <p class="text-sm my-2">Lead development & content management for the DEI report for the Applied Physics Laboratory.</p>
-              <InlineLink href="https://www.jhuapl.edu/Diversity-Equity-Inclusion-Annual-Report-2022/" target>View DEI Report</InlineLink>
+              <p class="space-x-2">
+                <span class="font-sans font-semibold">Explore DEI Annual Reports:</span>
+                <InlineLink href="https://www.jhuapl.edu/Diversity-Equity-Inclusion-Annual-Report-2023/" target>2023</InlineLink>
+                <InlineLink href="https://www.jhuapl.edu/Diversity-Equity-Inclusion-Annual-Report-2022/" target>2022</InlineLink>
+                <InlineLink href="https://www.jhuapl.edu/Diversity-Inclusion-Annual-Report-2021/" target>2021</InlineLink>
+              </p>
             </div>
           </li>
           <li>
@@ -44,13 +61,6 @@
               <h4 class="font-sans font-semibold">JHU APL Website</h4>
               <p class="text-sm my-2">Served as a technical consultant for APL's primary external website.</p>
               <InlineLink href="https://www.jhuapl.edu" target>View APL Website</InlineLink>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h4 class="font-sans font-semibold">MSBA Website</h4>
-              <p class="text-sm my-2">Developed many front-end components, the page-builder for marketing pages and premium features for members.</p>
-              <InlineLink href="https://www.msba.org" target>View MSBA.org</InlineLink>
             </div>
           </li>
         </ul>
