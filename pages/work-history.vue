@@ -10,7 +10,7 @@
         </div>
         <div class="col-span-3">
           <h3 class="text-gray-100 text-xl font-sans font-medium">
-            User Interface Developer
+            Software Engineer (User Interface Developer)
           </h3>
           <h4 class="text-gray-300 text-base italic font-serif mt-1">
             Johns Hopkins University Applied Physics Laboratory
