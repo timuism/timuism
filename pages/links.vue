@@ -12,20 +12,16 @@ const links: LinkInterface[] = [
     text: "My Website",
     isInternalLink: true,
   },
-  {
-    url: "https://twitter.com/timuism",
-    text: "Twitter",
-  },
-  {
-    url: "https://instagram.com/timuism",
-    text: "Instagram",
-  },
+  // {
+  //   url: "https://instagram.com/timuism",
+  //   text: "Instagram",
+  // },
   {
     url: "https://www.youtube.com/channel/UCVCY5V1UVF8NtaIOV0ye3vQ",
     text: "YouTube",
   },
   {
-    url: "https://linkedin.com/in/timuism",
+    url: "https://linkedin.com/in/timothyjosephlong",
     text: "LinkedIn",
     isInternalLink: true,
   },
